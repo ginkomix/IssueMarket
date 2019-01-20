@@ -12,7 +12,7 @@ const DIR_ASSETS = 'assets/';
 
 const resolve = (dir) => path.resolve(__dirname, '..', dir);
 
-module.exports = function build(env, args) {
+module.exports = function build(env, args={}) {
   args = args || {};
 
   const NODE_ENV = (process.env.NODE_ENV || '').trim() || 'development';
